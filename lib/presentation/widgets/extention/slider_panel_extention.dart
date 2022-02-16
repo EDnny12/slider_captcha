@@ -87,7 +87,7 @@ class SliderPanelExtension extends StatelessWidget {
             color: Colors.grey.withOpacity(0.8),
             child: const Center(
               child: TimerTitle(
-                title: 'Vui lòng xác thực lại sau',
+                title: 'Demasiados intentos, vuelve a probar',
               ),
             ),
           ),
