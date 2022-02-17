@@ -47,10 +47,6 @@ class SliderCaptchaCubit extends Cubit<SliderCaptchaState> {
     if (dx < offsetX + 5 && dx > offsetX - 5) {
       onSuccess();
     } else {
-      if (wrongNumber == 4) {
-        lockUI();
-        return;
-      }
       wrongNumber++;
       emit(const SliderCaptchaMove(0));
     }
